@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddActivity">
+    tools:context=".AddActivity"
+    android:background="@drawable/background3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_systolic_pressure"
+        android:text="Systolic Pressure"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <EditText
+        android:layout_below="@+id/add_label_systolic_pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Add_Enter_Systolic_pressure"
+        android:hint="Enter Systolic pressure"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_diastolic_pressure"
+        android:layout_below="@+id/Add_Enter_Systolic_pressure"
+        android:text="Diastolic Pressure"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_label_diastolic_pressure"
+        android:id="@+id/Add_Enter_Diastolic_pressure"
+        android:hint="Enter Diastolic pressure"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_heart_rate"
+        android:layout_below="@+id/Add_Enter_Diastolic_pressure"
+        android:text="Heart Rate"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_label_heart_rate"
+        android:id="@+id/Add_Enter_Heart_Rate"
+        android:hint="Enter Heart Rate"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_Enter_Measure_time"
+        android:layout_below="@+id/Add_Enter_Heart_Rate"
+        android:text="Measured Time"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_label_Enter_Measure_time"
+        android:id="@+id/ADD_Enter_Measure_Time"
+        android:hint="Enter Measure Time"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_measured_date"
+        android:layout_below="@+id/ADD_Enter_Measure_Time"
+        android:text="Measured Date"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_label_measured_date"
+        android:id="@+id/ADD_Enter_Measure_Date"
+        android:hint="Enter Measure Date"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_label_enter_comment"
+        android:layout_below="@+id/ADD_Enter_Measure_Date"
+        android:text="Comment"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_label_enter_comment"
+        android:id="@+id/ADD_Enter_Comment"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:hint="Enter Comment"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ADD_Enter_Comment"
+        android:layout_centerHorizontal="true"
+        android:text="ADD"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ADD_ADDButton"
+        >
+    </Button>
+</RelativeLayout>
