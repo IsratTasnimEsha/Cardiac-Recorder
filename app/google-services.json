@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357308917959",
+    "project_id": "gitproject-46e25",
+    "storage_bucket": "gitproject-46e25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357308917959:android:0d92ca9f45268852d336e2",
+        "android_client_info": {
+          "package_name": "com.example.gitproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357308917959-016tjaq36c3dcljgbb51atl7e5oecf1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSPD_GlqZP4nFPOMCq7YRsngJoBc58lSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357308917959-016tjaq36c3dcljgbb51atl7e5oecf1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
