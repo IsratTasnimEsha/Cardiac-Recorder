@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
@@ -61,6 +62,7 @@ public class StartActivity extends AppCompatActivity {
 
     }
 
+
     private class MyAnimationListener implements Animation.AnimationListener {
 
         @Override
@@ -83,16 +85,3 @@ public class StartActivity extends AppCompatActivity {
         }
     }
 }
-
-   // @Override
-   // protected void onStart() {
-    //    super.onStart();
-
-     //   if (FirebaseAuth.getInstance().getCurrentUser() != null){
-     //       startActivity(new Intent(StartActivity.this , MainActivity.class));
-         //   finish();
-     //   }
-
-    //}
-
-//}

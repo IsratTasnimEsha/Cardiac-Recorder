@@ -9,16 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 import com.google.firebase.auth.FirebaseAuth;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
 public class UpdateActivity extends AppCompatActivity {
     EditText sys, dias, rate, comment;
     String str_phone, st_time;
+
     Button delete, submit;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
 
@@ -35,6 +39,7 @@ public class UpdateActivity extends AppCompatActivity {
         delete=findViewById(R.id.delete);
 
         Intent intent=getIntent();
+
         st_time =intent.getStringExtra("Time");
 
         databaseReference.child("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(st_time)
@@ -44,6 +49,7 @@ public class UpdateActivity extends AppCompatActivity {
                         String st_sys= (String) snapshot.child("Systolic").getValue();
                         sys.setText(st_sys);
                         String st_dias= (String) snapshot.child("Diastolic").getValue();
+
                         dias.setText(st_dias);
                         String st_rate= (String) snapshot.child("Heart_Rate").getValue();
                         rate.setText(st_rate);
@@ -63,6 +69,7 @@ public class UpdateActivity extends AppCompatActivity {
                 String st_sys=sys.getText().toString();
                 String st_dias=dias.getText().toString();
                 String st_rate=rate.getText().toString();
+
                 String st_comment=comment.getText().toString();
 
                 String uid = FirebaseAuth.getInstance().getUid();
@@ -79,6 +86,7 @@ public class UpdateActivity extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 databaseReference.child("users").child(FirebaseAuth.getInstance().getUid()).child(st_time).removeValue();
                 finish();
             }
