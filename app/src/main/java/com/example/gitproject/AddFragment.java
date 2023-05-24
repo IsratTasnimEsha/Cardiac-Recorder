@@ -105,6 +105,11 @@ public class AddFragment extends Fragment {
                 databaseReference.child("users").child(str_phone).child(st_time).child("Heart_Rate").setValue(st_rate);
                 databaseReference.child("users").child(str_phone).child(st_time).child("Comment").setValue(st_comment);
                 databaseReference.child("users").child(str_phone).child(st_time).child("Time").setValue(st_time);
+
+                sys.setText("");
+                dias.setText("");
+                rate.setText("");
+                comment.setText("");
             }
         });
     }
