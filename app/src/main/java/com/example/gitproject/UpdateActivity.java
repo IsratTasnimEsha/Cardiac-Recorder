@@ -31,12 +31,12 @@ public class UpdateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
-        sys=findViewById(R.id.sys);
-        dias=findViewById(R.id.dias);
-        rate=findViewById(R.id.rate);
-        comment=findViewById(R.id.comment);
-        submit=findViewById(R.id.update);
-        delete=findViewById(R.id.delete);
+        sys=findViewById(R.id.Update_Enter_Systolic_pressure);
+        dias=findViewById(R.id.Update_Enter_Diastolic_pressure);
+        rate=findViewById(R.id.Update_Enter_Heart_Rate);
+        comment=findViewById(R.id.Update_Enter_Comment);
+        submit=findViewById(R.id.Update_UpdateButton);
+        delete=findViewById(R.id.Update_DeleteButton);
 
         Intent intent=getIntent();
 
@@ -83,13 +83,9 @@ public class UpdateActivity extends AppCompatActivity {
             }
         });
 
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                databaseReference.child("users").child(FirebaseAuth.getInstance().getUid()).child(st_time).removeValue();
-                finish();
-            }
+        delete.setOnClickListener(v -> {
+            databaseReference.child("users").child(FirebaseAuth.getInstance().getUid()).child(st_time).removeValue();
+            finish();
         });
     }
 }

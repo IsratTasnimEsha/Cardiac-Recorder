@@ -17,11 +17,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AddActivity#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class AddActivity extends AppCompatActivity {
 
     EditText sys, dias, rate, comment;
@@ -35,11 +30,11 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        sys=findViewById(R.id.sys);
-        dias=findViewById(R.id.dias);
-        rate=findViewById(R.id.rate);
-        comment=findViewById(R.id.comment);
-        add=findViewById(R.id.add);
+        sys=findViewById(R.id.Add_Enter_Systolic_pressure);
+        dias=findViewById(R.id.Add_Enter_Diastolic_pressure);
+        rate=findViewById(R.id.Add_Enter_Heart_Rate);
+        comment=findViewById(R.id.ADD_Enter_Comment);
+        add=findViewById(R.id.ADD_ADDButton);
 
 
         uid  = FirebaseAuth.getInstance().getUid();

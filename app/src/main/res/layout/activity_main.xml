@@ -5,27 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <FrameLayout
-        android:id="@+id/h_frame"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/h_linear">
-    </FrameLayout>
+        android:id="@+id/recycler"
+        android:background="#fcf7f7"
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/h_linear"
-        android:layout_width="match_parent"
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/h_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#E9E8E6"
-            app:menu="@menu/menu_items" />
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/floating_add"/>
 
 </RelativeLayout>
