@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/ivProfile"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="26dp"
         android:background="@drawable/input_bg"
@@ -39,7 +39,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,15 +47,15 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -68,26 +68,25 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_baseline_smartphone_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
-
-        android:inputType="textPersonName"
+        android:hint="Phone"
+        android:inputType="numberDecimal"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
         android:id="@+id/password"
@@ -99,17 +98,16 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
-
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <android.widget.Button
         android:id="@+id/register"
@@ -129,7 +127,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:strokeColor="@color/black" />
+        app:strokeColor="@color/black"
+        android:onClick="registerPage"/>
 
     <TextView
         android:id="@+id/login_user"
@@ -142,7 +141,8 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/register"
         app:layout_constraintStart_toStartOf="@+id/register"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        android:onClick="loginPage"/>
 
     <android.widget.Button
         android:id="@+id/buttonBack"
