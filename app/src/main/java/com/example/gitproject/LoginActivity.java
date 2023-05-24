@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                         String str_pass = (String) snapshot.child(st_phone).child("Password").getValue();
 
                         if (str_pass.equals(st_pass)) {
-                            Intent intent=new Intent(LoginActivity.this, HomeActivity.class);
+                            Intent intent=new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("Phone", st_phone);
                             startActivity(intent);
                         }
