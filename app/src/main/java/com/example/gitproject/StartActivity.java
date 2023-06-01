@@ -40,7 +40,7 @@ public class StartActivity extends AppCompatActivity {
         linearLayout.animate().alpha(0f).setDuration(10);
 
         TranslateAnimation animation = new TranslateAnimation(0, 0, 0, -1500);
-        animation.setDuration(1000);
+        animation.setDuration(2000);
         animation.setFillAfter(false);
         animation.setAnimationListener(new MyAnimationListener());
 

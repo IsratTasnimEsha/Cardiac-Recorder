@@ -11,19 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:rowCount="6"
-            app:columnCount="2">
-
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_row="0"
                 app:layout_column="0"
-                android:id="@+id/sys"
+
                 app:layout_gravity="fill"
                 app:layout_columnWeight="1"
                 android:layout_margin="8dp"
@@ -70,6 +63,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="120"
+                            android:id="@+id/sys"
                             android:textSize="20dp"/>
 
                         <TextView
@@ -86,10 +80,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_row="0"
-                android:id="@+id/dias"
+
                 app:layout_column="1"
                 app:layout_gravity="fill"
                 app:layout_columnWeight="1"
@@ -137,6 +131,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="120"
+                            android:id="@+id/dias"
                             android:textSize="20dp"/>
 
                         <TextView
@@ -153,7 +148,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_row="1"
                 app:layout_column="0"
@@ -162,7 +157,7 @@
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
-                android:id="@+id/rate">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -192,6 +187,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="120"
+                            android:id="@+id/rate"
                             android:textSize="20dp"/>
 
                         <TextView
@@ -208,7 +204,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_row="1"
                 app:layout_column="1"
@@ -245,16 +241,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:layout_marginBottom="12dp"
-                            android:text="mm Hg" />
+                            android:layout_marginBottom="12dp" />
 
                     </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
-        </androidx.gridlayout.widget.GridLayout>
 
         <TextView
             android:id="@+id/time"

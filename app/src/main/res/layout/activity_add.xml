@@ -123,14 +123,17 @@
         >
     </EditText>
 
-    <Button
+    <android.widget.Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ADD_Enter_Comment"
         android:layout_centerHorizontal="true"
         android:text="ADD"
-        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginTop="40dp"
         android:id="@+id/ADD_ADDButton"
         >
-    </Button>
+    </android.widget.Button>
 </RelativeLayout>

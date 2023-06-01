@@ -133,25 +133,32 @@
         android:layout_below="@id/Update_Enter_Comment"
         android:layout_centerHorizontal="true"
         >
-        <Button
+        <android.widget.Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="UPDATE"
+            android:textColor="@color/white"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:layout_marginTop="30dp"
+
             android:id="@+id/Update_UpdateButton"
             >
-        </Button>
-        <Button
+        </android.widget.Button>
+        <android.widget.Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="Delete"
+            android:textColor="@color/white"
+            android:background="@drawable/input_bg"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:id="@+id/Update_DeleteButton"
             >
-        </Button>
+        </android.widget.Button>
 
     </LinearLayout>
 
