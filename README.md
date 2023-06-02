@@ -14,17 +14,17 @@
 ## Starting Screen
 ![start screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/837a9204-190a-4a51-8d52-332121d8949f)
 
-### LogIN Page 
+## LogIN Page 
 ![login](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/eb5b117d-c9a0-407f-8590-29a4c9cfee86)
 
-### Register Page 
+## Register Page 
 ![register](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/8eb5d8d3-2465-4760-8a75-0fec0c20b34a)
 
-### Add any Record 
+## Add any Record 
 
 ![add](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/9ec0e0ba-2a07-4092-bd41-0265518fbfe7)
 
-### Update and delete  
+## Update and delete  
 records![update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
 
 
