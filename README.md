@@ -8,7 +8,7 @@
 - Here sqlite database is used to store previous data.During adding any new entry time and date for corresponding entry is taken from system.
 
 # Screenshots
-### Splash Screen
+## Splash Screen
 ![splash screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/1c408ecd-9c25-46f9-8ff2-2261602884f0)
 
 ### Starting Screen
@@ -21,9 +21,11 @@
 ![register](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/8eb5d8d3-2465-4760-8a75-0fec0c20b34a)
 
 ### Add any Record 
+
 ![add](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/9ec0e0ba-2a07-4092-bd41-0265518fbfe7)
 
-### Update and delete  records![update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
+### Update and delete  
+records![update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
 
 
 
