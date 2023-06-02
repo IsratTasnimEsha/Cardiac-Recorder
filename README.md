@@ -11,7 +11,7 @@
 ## Splash Screen
 ![splash screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/1c408ecd-9c25-46f9-8ff2-2261602884f0)
 
-### Starting Screen
+## Starting Screen
 ![start screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/837a9204-190a-4a51-8d52-332121d8949f)
 
 ### LogIN Page 
