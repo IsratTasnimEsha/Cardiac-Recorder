@@ -25,7 +25,7 @@
 ![add](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/9ec0e0ba-2a07-4092-bd41-0265518fbfe7)
 
 ## Update and delete  
-[update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
+![update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
 
 
 
