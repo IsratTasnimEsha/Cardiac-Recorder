@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         adapterClass= new AdapterClass(this, arrayList);
         recyclerView.setAdapter(adapterClass);
 
-        FloatingActionButton buttonAdd = findViewById(R.id.buttonAdd);
+        Button buttonAdd = findViewById(R.id.ADD_ADDButton);
 
         buttonAdd.setOnClickListener(view-> startActivity(new Intent(this,AddActivity.class)));
 

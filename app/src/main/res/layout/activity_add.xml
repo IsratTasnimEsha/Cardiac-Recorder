@@ -139,7 +139,8 @@
         android:text="ADD"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:background="@drawable/button2"
-        android:layout_marginTop="30dp"">
+        android:background="@drawable/button4"
+        android:layout_marginTop="30dp">
     </android.widget.Button>
+
 </RelativeLayout>
