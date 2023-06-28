@@ -6,18 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddActivity"
-    android:background="@drawable/background3">
+    android:background="@drawable/background2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/add_label_systolic_pressure"
         android:text="Systolic Pressure"
-        android:textSize="14dp"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:textColor="@color/black"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="180dp">
     </TextView>
     <EditText
         android:layout_below="@+id/add_label_systolic_pressure"
@@ -32,8 +33,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp">
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
     </EditText>
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +42,9 @@
         android:id="@+id/add_label_diastolic_pressure"
         android:layout_below="@+id/Add_Enter_Systolic_pressure"
         android:text="Diastolic Pressure"
-        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
@@ -61,15 +64,17 @@
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp">
+        android:paddingBottom="20dp">
     </EditText>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/add_label_heart_rate"
+        android:textColor="@color/black"
         android:layout_below="@+id/Add_Enter_Diastolic_pressure"
         android:text="Heart Rate"
-        android:textSize="14dp"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
@@ -81,8 +86,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_label_enter_comment"
         android:layout_below="@+id/Add_Enter_Heart_Rate"
-        android:text="Heart Rate"
-        android:textSize="14dp"
+        android:text="Comment"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
@@ -102,7 +109,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp">
+        android:paddingBottom="20dp">
     </EditText>
 
     <EditText
@@ -111,7 +118,7 @@
         android:layout_below="@id/add_label_enter_comment"
         android:id="@+id/ADD_Enter_Comment"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingBottom="20dp"
         android:hint="Enter Comment"
         android:textColor="#000000"
         android:textColorHint="#000000"
@@ -124,16 +131,15 @@
     </EditText>
 
     <android.widget.Button
+        android:id="@+id/ADD_ADDButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ADD_Enter_Comment"
         android:layout_centerHorizontal="true"
         android:text="ADD"
         android:textColor="@color/white"
-        android:background="@drawable/input_bg"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:layout_marginTop="40dp"
-        android:id="@+id/ADD_ADDButton"
-        >
+        android:textSize="16sp"
+        android:background="@drawable/button2"
+        android:layout_marginTop="30dp"">
     </android.widget.Button>
 </RelativeLayout>
