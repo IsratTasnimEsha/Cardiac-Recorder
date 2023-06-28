@@ -8,24 +8,30 @@
 - Here sqlite database is used to store previous data.During adding any new entry time and date for corresponding entry is taken from system.
 
 # Screenshots
-## Splash Screen
-![splash screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/1c408ecd-9c25-46f9-8ff2-2261602884f0)
+## Splash Screen 
+![splashscreen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0f6bed80-2a42-48e3-8165-a2bf471ae8ff)
 
 ## Starting Screen
-![start screen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/837a9204-190a-4a51-8d52-332121d8949f)
+![startscreen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/20fd20e3-5309-4f56-8d39-ef94e13efc54)
 
 ## LogIN Page 
-![login](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/eb5b117d-c9a0-407f-8590-29a4c9cfee86)
+![loginpage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/28a77e91-3c03-4706-a18f-3752c731b9ef)
 
 ## Register Page 
-![register](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/8eb5d8d3-2465-4760-8a75-0fec0c20b34a)
+![registerpage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/6caca939-6e1f-41f7-a1df-be77d869a6ae)
+## Home Page
+![homepage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/934e9610-ec0f-45ac-938d-d84379899b13)
 
 ## Add any Record 
-
-![add](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/9ec0e0ba-2a07-4092-bd41-0265518fbfe7)
+![addrecord](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/1ef57ae0-df73-4840-9e29-7df23f3d55b5)
 
 ## Update and delete  
-![update and delete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/cbd8a1a6-35cd-432f-b965-87477bec0abd)
+![updatedelete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/b4993346-d1d8-4fa2-b4d7-6551fdbbdcb2)
+
+
+## Team Members
+  1.Md. Sunzidul Islam
+  2.Israt Tasnim Esha
 
 
 
