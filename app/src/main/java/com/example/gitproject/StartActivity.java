@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-<<<<<<< HEAD
+
 
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -20,8 +20,6 @@ import com.example.gitproject.R;
 import com.example.gitproject.RegisterActivity;
 //import com.google.firebase.auth.FirebaseAuth;
 
-=======
->>>>>>> esha
 
 public class StartActivity extends AppCompatActivity {
 
@@ -65,7 +63,6 @@ public class StartActivity extends AppCompatActivity {
 
     }
 
-<<<<<<< HEAD
 
     private class MyAnimationListener implements Animation.AnimationListener {
 
@@ -89,13 +86,4 @@ public class StartActivity extends AppCompatActivity {
         }
     }
 }
-=======
-    public void loginPage(View view) {
-        startActivity(new Intent(this, LoginActivity.class));
-    }
 
-    public void registerPage(View view) {
-        startActivity(new Intent(this, RegisterActivity.class));
-    }
-}
->>>>>>> esha

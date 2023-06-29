@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
     <FrameLayout
-<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -59,27 +58,4 @@
         android:layout_marginRight="500dp"
         android:layout_marginLeft="270dp">
     </android.widget.Button>
-=======
-        android:id="@+id/h_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/h_linear">
-    </FrameLayout>
-
-    <LinearLayout
-        android:id="@+id/h_linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/h_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#E9E8E6"
-            app:menu="@menu/menu_items" />
-    </LinearLayout>
->>>>>>> esha
-
 </RelativeLayout>

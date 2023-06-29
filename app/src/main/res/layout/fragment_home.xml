@@ -5,10 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-<<<<<<< HEAD
-=======
-    <!-- TODO: Update blank fragment layout -->
->>>>>>> esha
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="409dp"

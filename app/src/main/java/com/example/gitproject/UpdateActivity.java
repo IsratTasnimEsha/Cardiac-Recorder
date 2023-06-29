@@ -9,32 +9,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-<<<<<<< HEAD
 
 import com.google.firebase.auth.FirebaseAuth;
 
-=======
->>>>>>> esha
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-<<<<<<< HEAD
-
 public class UpdateActivity extends AppCompatActivity {
     EditText sys, dias, rate, comment;
     String str_phone, st_time;
 
-=======
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
-public class UpdateActivity extends AppCompatActivity {
-    EditText sys, dias, rate, comment;
-    String str_phone, str_time;
->>>>>>> esha
     Button delete, submit;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
 
@@ -43,7 +30,6 @@ public class UpdateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
-<<<<<<< HEAD
         sys=findViewById(R.id.Update_Enter_Systolic_pressure);
         dias=findViewById(R.id.Update_Enter_Diastolic_pressure);
         rate=findViewById(R.id.Update_Enter_Heart_Rate);
@@ -56,32 +42,17 @@ public class UpdateActivity extends AppCompatActivity {
         st_time =intent.getStringExtra("Time");
 
         databaseReference.child("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(st_time)
-=======
-        sys=findViewById(R.id.sys);
-        dias=findViewById(R.id.dias);
-        rate=findViewById(R.id.rate);
-        comment=findViewById(R.id.comment);
-        submit=findViewById(R.id.update);
-        delete=findViewById(R.id.delete);
 
-        Intent intent=getIntent();
-        str_phone=intent.getStringExtra("Phone");
-        str_time=intent.getStringExtra("Time");
-
-        databaseReference.child("users").child(str_phone).child(str_time)
->>>>>>> esha
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         String st_sys= (String) snapshot.child("Systolic").getValue();
                         sys.setText(st_sys);
                         String st_dias= (String) snapshot.child("Diastolic").getValue();
-<<<<<<< HEAD
+
 
                         dias.setText(st_dias);
-=======
-                        dias.setText("Phone: " + st_dias);
->>>>>>> esha
+
                         String st_rate= (String) snapshot.child("Heart_Rate").getValue();
                         rate.setText(st_rate);
                         String st_comment= (String) snapshot.child("Comment").getValue();
@@ -100,7 +71,6 @@ public class UpdateActivity extends AppCompatActivity {
                 String st_sys=sys.getText().toString();
                 String st_dias=dias.getText().toString();
                 String st_rate=rate.getText().toString();
-<<<<<<< HEAD
 
                 String st_comment=comment.getText().toString();
 
@@ -118,25 +88,7 @@ public class UpdateActivity extends AppCompatActivity {
         delete.setOnClickListener(v -> {
             databaseReference.child("users").child(FirebaseAuth.getInstance().getUid()).child(st_time).removeValue();
             finish();
-=======
-                String st_time=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
-                String st_comment=comment.getText().toString();
 
-                databaseReference.child("users").child(str_phone).child(st_time).child("Systolic").setValue(st_sys);
-                databaseReference.child("users").child(str_phone).child(st_time).child("Diastolic").setValue(st_dias);
-                databaseReference.child("users").child(str_phone).child(st_time).child("Heart_Rate").setValue(st_rate);
-                databaseReference.child("users").child(str_phone).child(st_time).child("Comment").setValue(st_comment);
-                databaseReference.child("users").child(str_phone).child(st_time).child("Time").setValue(st_time);
-                databaseReference.child("users").child(str_phone).child(st_time).child("Phone").setValue(str_phone);
-            }
-        });
-
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                databaseReference.child("users").child(str_phone).child(str_time).removeValue();
-            }
->>>>>>> esha
         });
     }
 }

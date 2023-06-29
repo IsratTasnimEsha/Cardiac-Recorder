@@ -8,7 +8,6 @@
     android:background="@drawable/background3"
     tools:context=".StartActivity">
 
-<<<<<<< HEAD
     <ImageView
         android:id="@+id/icon_image"
         android:layout_width="150dp"
@@ -17,9 +16,6 @@
         android:layout_centerInParent="true"
         android:visibility="visible" />
 
-
-=======
->>>>>>> esha
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
@@ -27,28 +23,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="145dp"
+        android:layout_marginBottom="260dp"
         android:orientation="vertical"
         android:padding="10dp">
 
-<<<<<<< HEAD
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:src="@drawable/splash" />
 
-=======
->>>>>>> esha
         <android.widget.Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-<<<<<<< HEAD
-            android:background="@drawable/button_login"
-            android:text="LOG IN"
             android:textColor="@color/black"
-=======
->>>>>>> esha
             android:layout_marginTop="20dp"
             android:background="@drawable/button_login"
             android:onClick="loginPage"
@@ -72,13 +60,13 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="110dp"
-        android:src="@drawable/logo" />
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="-2dp"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        android:src="@drawable/logo" />-->
 </RelativeLayout>
