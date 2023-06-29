@@ -6,10 +6,6 @@
     tools:context=".AddFragment"
     android:background="@drawable/background3">
 
-<<<<<<< HEAD
-=======
-    <!-- TODO: Update blank fragment layout -->
->>>>>>> esha
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
