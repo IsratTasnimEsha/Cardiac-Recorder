@@ -133,7 +133,8 @@
                 android:layout_height="wrap_content"
                 android:text=" Register"
                 android:textColor="@color/purple_700"
-                android:onClick="registerPage"/>
+                android:onClick="registerPage"
+                android:id="@+id/register"/>
 
         </LinearLayout>
 
@@ -180,6 +181,7 @@
                         app:layout_constraintStart_toEndOf="@+id/btngoogle"
                         app:layout_constraintTop_toTopOf="@+id/btngoogle"
                         app:layout_constraintVertical_bias="0.0" />
+
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
