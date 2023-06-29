@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+<<<<<<< HEAD
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,12 +31,24 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<UserClass> arrayList;
     AdapterClass adapterClass;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
+=======
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
+public class MainActivity extends AppCompatActivity {
+
+    BottomNavigationView menu;
+    HomeFragment homeFragment=new HomeFragment();
+    AddFragment addFragment = new AddFragment();
+>>>>>>> esha
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
 
         recyclerView = findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);
@@ -68,5 +81,23 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+=======
+        menu=findViewById(R.id.h_menu);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.h_frame, homeFragment).commit();
+
+        menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if(item.getItemId()==R.id.h_home) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.h_frame, homeFragment).commit();
+                }
+                if(item.getItemId()==R.id.h_add) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.h_frame, addFragment).commit();
+                }
+                return true;
+            }
+        });
+>>>>>>> esha
     }
 }

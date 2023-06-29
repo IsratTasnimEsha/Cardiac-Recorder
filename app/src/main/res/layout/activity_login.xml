@@ -8,23 +8,30 @@
     android:background="@drawable/background">
 
 
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
+<<<<<<< HEAD
         android:src="@drawable/splash"
+=======
+        android:src="@drawable/logo"
+>>>>>>> esha
         android:textColor="@color/colorWhite"
         android:textColorHighlight="@color/colorWhite"
         android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         android:layout_marginTop="40dp"
         app:layout_constraintVertical_bias="0.05" />
+=======
+        app:layout_constraintVertical_bias="0.099" />
+>>>>>>> esha
 
     <EditText
         android:id="@+id/password"
@@ -43,25 +50,34 @@
         android:textColor="@color/black"
         android:paddingBottom="10dp"
         android:textColorHint="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+<<<<<<< HEAD
         android:layout_marginTop="120dp"
+=======
+        android:layout_marginTop="88dp"
+>>>>>>> esha
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_baseline_smartphone_24"
         android:drawablePadding="10dp"
         android:ems="10"
+<<<<<<< HEAD
         android:textColor="@color/black"
         android:hint="Enter Email..."
         android:inputType="textPersonName"
+=======
+        android:hint="Enter Phone Number..."
+        android:inputType="numberDecimal"
+>>>>>>> esha
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -102,7 +118,8 @@
         app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
         app:rippleColor="@color/colorWhite"
-        app:strokeColor="@color/colorWhite" />
+        app:strokeColor="@color/colorWhite"
+        android:onClick="loginPage"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -118,14 +135,39 @@
         app:layout_constraintTop_toBottomOf="@+id/login">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to CardiacRecorder?"
+                android:textColor="@color/purple_700" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register"
+                android:textColor="@color/purple_700"
+                android:onClick="registerPage"/>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="New to Cardiac Recorder? Register"
             android:textColor="@color/purple_700" />
 
+=======
+            android:text=" Register"
+            android:textColor="@color/purple_700"
+            android:onClick="registerPage"/>
+>>>>>>> esha
 
     </LinearLayout>
 
