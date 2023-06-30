@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_alignParentStart="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="3dp"
         android:layout_marginBottom="260dp"
