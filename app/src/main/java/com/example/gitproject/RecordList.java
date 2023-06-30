@@ -7,6 +7,11 @@ import java.util.List;
 public class RecordList {
     ArrayList<UserClass>arrayList = new ArrayList<>();
 
+    public ArrayList<UserClass> getRecords() {
+        ArrayList<UserClass> recordList = arrayList;
+        return recordList;
+    }
+
     public void add(UserClass userClass) {
         if(arrayList.contains(userClass))
         {
@@ -24,8 +29,8 @@ public class RecordList {
         arrayList.remove(userClass);
     }
 
-    public ArrayList<UserClass> getRecords() {
-        ArrayList<UserClass> recordList = arrayList;
-        return recordList;
+    public void update(int position, UserClass userClass)
+    {
+        arrayList.set(position, userClass);
     }
 }
