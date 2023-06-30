@@ -5,7 +5,7 @@
 
 - It is very important to keep track of one blood pressure and heart data as it indicates to one health situation.To make it easy for users we have developed an app to keep track of their Blood pressure and Heart Rate data.Based on Blood pressure and Heart rate an indicator flag is used to help the user to take a good care of his health.
 
-- Here sqlite database is used to store previous data.During adding any new entry time and date for corresponding entry is taken from system.
+- Here Realtime database is used to store previous data.During adding any new entry time and date for corresponding entry is taken from system.
 # OverView
 ![video6115890995503565355_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/4e481032-5513-4234-ad3e-6966a1dda6bb)
 
