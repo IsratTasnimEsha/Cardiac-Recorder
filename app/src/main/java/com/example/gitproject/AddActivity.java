@@ -60,16 +60,20 @@ public class AddActivity extends AppCompatActivity {
                     rate.setError("Heart Rate can't be empty.");
                 }
 
-                else if(Float.parseFloat(st_sys)<0 || Float.parseFloat(st_sys)>300) {
+                else if(Float.parseFloat(st_sys)<90 || Float.parseFloat(st_sys)>140) {
                     sys.setError("Systolic pressure is invalid.");
                 }
 
-                else if(Float.parseFloat(st_dias)<0 || Float.parseFloat(st_dias)>300) {
+                else if(Float.parseFloat(st_dias)<60 || Float.parseFloat(st_dias)>90) {
                     dias.setError("Diastolic pressure is invalid.");
                 }
 
                 else if(Float.parseFloat(st_rate)<0 || Float.parseFloat(st_rate)>200) {
                     rate.setError("Heart Rate is invalid.");
+                }
+
+                else if(st_comment.length()>20) {
+                    comment.setError("Comment should be up to 20 characters");
                 }
 
                 else {
