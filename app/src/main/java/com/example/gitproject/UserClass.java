@@ -39,4 +39,8 @@ public class UserClass {
     public String getTime() {
         return Time;
     }
+
+    public int compareTo(UserClass userClass) {
+        return this.Time.compareTo(userClass.getTime());
+    }
 }
