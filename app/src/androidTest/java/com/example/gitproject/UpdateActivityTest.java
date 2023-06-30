@@ -22,6 +22,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+/**
+ * Contains Espresso tests for the UpdateActivity functionality.
+ */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class UpdateActivityTest {
@@ -30,8 +33,13 @@ public class UpdateActivityTest {
     public ActivityScenarioRule<MainActivity> activityRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
+    /**
+     * Tests the update measurement functionality.
+     * Simulates user interactions by entering new values for systolic pressure, diastolic pressure,
+     * heart rate, and comment, and then clicks the update button.
+     */
     @Test
-    public void testupdatemeasurement(){
+    public void testUpdateMeasurement(){
         SystemClock.sleep(5000);
         Espresso.onView(withId(R.id.recycler)).perform(longClick());
         SystemClock.sleep(1000);
@@ -47,8 +55,13 @@ public class UpdateActivityTest {
         onView(withId(R.id.Update_UpdateButton)).perform(click());
         SystemClock.sleep(5000);
     }
+
+    /**
+     * Tests the delete measurement functionality.
+     * Simulates a user long-clicking on a measurement item and clicks the delete button.
+     */
     @Test
-    public void testdeletemeasurement(){
+    public void testDeleteMeasurement(){
         SystemClock.sleep(5000);
         Espresso.onView(withId(R.id.recycler)).perform(longClick());
         SystemClock.sleep(1000);
@@ -56,4 +69,3 @@ public class UpdateActivityTest {
         SystemClock.sleep(5000);
     }
 }
-

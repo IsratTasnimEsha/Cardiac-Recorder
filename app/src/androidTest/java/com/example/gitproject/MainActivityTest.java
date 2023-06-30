@@ -21,6 +21,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+/**
+ * Contains Espresso tests for the MainActivity functionality.
+ */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class MainActivityTest {
@@ -29,11 +32,21 @@ public class MainActivityTest {
     public ActivityScenarioRule<AddActivity> activityRule =
             new ActivityScenarioRule<>(AddActivity.class);
 
+    /**
+     * Tests the check app name functionality.
+     * Verifies if the app name "Cardio" is displayed on the screen.
+     */
     @Test
     public void testCheckAppName() {
         onView(withText("Cardio")).check(matches(isDisplayed()));
     }
 
+
+    /**
+     * Tests the add measurement functionality.
+     * Simulates user interactions by entering values for systolic pressure, diastolic pressure,
+     * heart rate, and comment, and then clicks the add button.
+     */
     @Test
     public void testAddMeasurement() {
         onView(withId(R.id.Add_Enter_Systolic_pressure)).perform(typeText("120"));
@@ -46,8 +59,14 @@ public class MainActivityTest {
         Espresso.pressBack();
         onView(withId(R.id.ADD_ADDButton)).perform(click());
     }
+
+    /**
+     * Tests the update measurement functionality.
+     * Simulates user interactions by entering new values for systolic pressure, diastolic pressure,
+     * heart rate, and comment, and then clicks the update button.
+     */
     @Test
-    public void testupdatemeasurement(){
+    public void testUpdateMeasurement(){
         SystemClock.sleep(5000);
         Espresso.onView(withId(R.id.record_recycler_view)).perform(click());
         SystemClock.sleep(1000);
@@ -63,4 +82,3 @@ public class MainActivityTest {
         SystemClock.sleep(5000);
     }
 }
-
