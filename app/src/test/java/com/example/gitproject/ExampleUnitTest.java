@@ -65,7 +65,7 @@ public class ExampleUnitTest {
         recordList.delete(userClass);
 
         assertEquals(1, recordList.getRecords().size());
-        assertTrue(recordList.getRecords().contains(userClass));
+        assertFalse(recordList.getRecords().contains(userClass));
     }
 
     @Test
@@ -94,7 +94,7 @@ public class ExampleUnitTest {
         recordList.add(userClass);
 
         UserClass userClass1 = new UserClass("01319661479", "80", "120", "120", "Good", "12-10-2000 12:30:00");
-        recordList.update(1, userClass1);
+        recordList.update(0, userClass1);
 
         assertFalse(recordList.getRecords().contains(userClass));
         assertTrue(recordList.getRecords().contains(userClass1));
