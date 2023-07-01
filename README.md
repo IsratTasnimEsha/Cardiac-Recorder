@@ -35,8 +35,8 @@
 
 
 ## Team Members
-  - 1.Md. Sunzidul Islam (1907079)
-  - 2.Israt Tasnim Esha (1907090)
+  - Md. Sunzidul Islam (1907079)
+  - Israt Tasnim Esha (1907090)
 
 
 
