@@ -55,11 +55,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        if( getSharedPreferences("sp",MODE_PRIVATE).getBoolean("loggedIn",false)){
-            startActivity(new Intent(this,MainActivity.class));
-        }
+//        if( getSharedPreferences("sp",MODE_PRIVATE).getBoolean("loggedIn",false)){
+//            startActivity(new Intent(this,MainActivity.class));
+//        }
 
-        email = findViewById(R.id.email);
+        email = findViewById(R.id.phone);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
         registerUser = findViewById(R.id.register);
@@ -78,11 +78,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String txt_email = email.getText().toString();
-                String txt_password = password.getText().toString();
+                String txt_password =/ password.getText().toString();
 
-                if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
+                if (txt_email.isEmpty() || txt_password.isEmpty()){
+
                     Toast.makeText(LoginActivity.this, "Empty Credentials!", Toast.LENGTH_SHORT).show();
                 } else {
+                    //Toast.makeText(LoginActivity.this,txt_email+txt_password,Toast.LENGTH_LONG).show();
                     loginUser(txt_email , txt_password);
                 }
             }
