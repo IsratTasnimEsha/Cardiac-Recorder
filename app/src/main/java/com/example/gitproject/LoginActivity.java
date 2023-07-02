@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         forgetPassButtonLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText email = findViewById(R.id.email);
+                EditText phone = findViewById(R.id.phone);
                 String mail = email.getText().toString();
                 if(mail.isEmpty()) return;
 
