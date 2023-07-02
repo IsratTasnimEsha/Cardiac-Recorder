@@ -24,13 +24,15 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="260dp"
         android:orientation="vertical"
         android:padding="10dp">
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="1dp"
             android:src="@drawable/splash" />
 
         <android.widget.Button
@@ -38,13 +40,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
 
-            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
 
-            android:layout_marginTop="20dp"
             android:background="@drawable/button_login"
             android:onClick="loginPage"
             android:text="LOG IN"
-            android:textAllCaps="false" />
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
         <Space
             android:layout_width="0dp"
@@ -56,9 +59,10 @@
             android:layout_height="50dp"
             android:background="@drawable/button_login"
             android:onClick="registerPage"
-            android:text="Register"
-            android:textColor="@color/black"
-            android:textAllCaps="false" />
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
 
     </LinearLayout>
