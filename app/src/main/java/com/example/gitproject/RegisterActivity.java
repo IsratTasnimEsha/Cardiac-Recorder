@@ -1,20 +1,19 @@
 package com.example.gitproject;
 
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -119,7 +118,7 @@ public class RegisterActivity extends AppCompatActivity {
                                                 if (task.isSuccessful()) {
                                                     pd.dismiss();
                                                     Toast.makeText(RegisterActivity.this, "Registration successful. Verification email sent.", Toast.LENGTH_SHORT).show();
-                                                    Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                                    Intent intent = new Intent(RegisterActivity.this, VerifyOTP1Activity.class);
                                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                     startActivity(intent);
                                                     finish();
@@ -169,126 +168,3 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-
-
-
-//import androidx.annotation.NonNull;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.core.content.ContextCompat;
-//
-//import android.content.Intent;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.widget.EditText;
-//import android.widget.Toast;
-//
-//import com.google.android.gms.tasks.OnCompleteListener;
-//import com.google.android.gms.tasks.Task;
-//import com.google.firebase.auth.AuthResult;
-//import com.google.firebase.auth.FirebaseAuth;
-//import com.google.firebase.database.DataSnapshot;
-//import com.google.firebase.database.DatabaseError;
-//import com.google.firebase.database.DatabaseReference;
-//import com.google.firebase.database.FirebaseDatabase;
-//import com.google.firebase.database.ValueEventListener;
-//
-//public class RegisterActivity extends AppCompatActivity {
-//
-//    private  EditText username, email, phone, password;
-//    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_register);
-//
-//        username = findViewById(R.id.username);
-//        email = findViewById(R.id.email);
-//        phone = findViewById(R.id.phone);
-//        password = findViewById(R.id.password);
-//    }
-//
-//    public void registerPage(View view) {
-//        String st_username = username.getText().toString();
-//        String st_email = email.getText().toString();
-//        String st_password = password.getText().toString();
-//        String st_phone = phone.getText().toString();
-//
-//        if (st_email.isEmpty()) {
-//            email.setError("Email Address Is Required.");
-//            Toast.makeText(this, "Email Address Is Required.", Toast.LENGTH_SHORT).show();
-//        } else if (st_phone.isEmpty()) {
-//            phone.setError("Phone Number Is Required.");
-//            Toast.makeText(this, "Phone Number Is Required.", Toast.LENGTH_SHORT).show();
-//        } else if (st_username.isEmpty()) {
-//            username.setError("Username Is Required.");
-//            Toast.makeText(this, "Username Is Required.", Toast.LENGTH_SHORT).show();
-//        } else if (st_password.length() < 6) {
-//            password.setError("Password Must Be At Least 6 Characters.");
-//            Toast.makeText(this, "Password Must Be At Least 6 Characters.", Toast.LENGTH_SHORT).show();
-//        }
-////        else {
-////            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
-////                @Override
-////                public void onDataChange(@NonNull DataSnapshot snapshot) {
-////                    if (snapshot.hasChild(st_phone)) {
-////                        Toast.makeText(RegisterActivity.this,
-////                                "Phone Number Is Already Registered.", Toast.LENGTH_SHORT).show();
-////                    }
-////                    else {
-////                        databaseReference.child("users").child(st_phone).child("User_Name").setValue(st_username);
-////                        databaseReference.child("users").child(st_phone).child("Phone").setValue(st_phone);
-////                        databaseReference.child("users").child(st_phone).child("EMail").setValue(st_email);
-////                        databaseReference.child("users").child(st_phone).child("Password").setValue(st_password);
-////
-////                        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-////                    }
-////                }
-//
-////                @Override
-////                public void onCancelled(@NonNull DatabaseError error) {
-////
-////                }
-////            });
-//
-//        FirebaseAuth mAuth;
-//        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//        @Override
-//        public void onComplete(@NonNull Task<AuthResult> task) {
-//            if (task.isSuccessful()) {
-//                UserDataType userObj = new UserDataType(username, email, phone, password);
-//                FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userObj).addOnCompleteListener(new OnCompleteListener<Void>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<Void> task) {
-//                        if (task.isSuccessful()) {
-//                            mAuth.getCurrentUser().sendEmailVerification();
-//                            errorMassageText.setText("Verification link has sent to your email.");
-//                            errorMassageText.setTextColor(ContextCompat.getColor(RegisterActivity.this, R.color.success));
-//                            errorMassageText.setVisibility(View.VISIBLE);
-//                            progressBar.setVisibility(View.GONE);
-//                               /* startActivity(new Intent(SignUpActivity.this, LogInActivity.class));
-//                                finish();*/
-//                        } else {
-//                            progressBar.setVisibility(View.GONE);
-//                            errorMassageText.setText("Registration Failed!");
-//                            errorMassageText.setTextColor(ContextCompat.getColor(RegisterActivity.this, R.color.error));
-//                            progressBar.setVisibility(View.GONE);
-//                            errorMassageText.setVisibility(View.VISIBLE);
-//                        }
-//                    }
-//                });
-//
-//            } else {
-//                progressBar.setVisibility(View.GONE);
-//                errorMassageText.setText("You are already registered!");
-//                errorMassageText.setTextColor(ContextCompat.getColor(RegisterActivity.this, R.color.error));
-//                errorMassageText.setVisibility(View.VISIBLE);
-//            }
-//        }
-//    });
-//
-//
-//    public void loginPage(View view) {
-//        startActivity(new Intent(this, LoginActivity.class));
-//    }
-//}
