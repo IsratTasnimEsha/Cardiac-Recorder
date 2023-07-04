@@ -42,8 +42,8 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "Email Address Is Required.", Toast.LENGTH_SHORT).show();
         }
         else if(st_phone.isEmpty()) {
-            phone.setError("Phone Number Is Required.");
-            Toast.makeText(this, "Phone Number Is Required.", Toast.LENGTH_SHORT).show();
+            phone.setError("Name Is Required.");
+            Toast.makeText(this, "Name Is Required.", Toast.LENGTH_SHORT).show();
         }
         else if(st_username.isEmpty()) {
             username.setError("Username Is Required.");
