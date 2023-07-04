@@ -7,7 +7,8 @@
 
 - In this application, We've used the Firebase Realtime Database to store and sync data in real-time. Firebase Authentication is used to manage user authentication and access control in the app. When adding a new entry, the system captures the time and date for the corresponding entry from the device's system clock.
 # Mockup Design
-![cardiac](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/9b78aa42-414e-4339-9d07-6b2e5192ca26)
+![cardio recorder](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/b8fa5703-b49f-4773-9d44-d9634dfbc071)
+
 
 # OverView
 ![video6115890995503565355_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/4e481032-5513-4234-ad3e-6966a1dda6bb)
