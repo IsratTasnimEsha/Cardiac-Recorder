@@ -35,12 +35,7 @@ public class UserClass {
         Time = time;
     }
 
-    /**
-     * Gets the phone number associated with the measurement.
-     *
-     * @return
-     *      The phone number.
-     */
+
     public String getPhone() {
         return Phone;
     }

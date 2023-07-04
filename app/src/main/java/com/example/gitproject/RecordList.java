@@ -11,12 +11,7 @@ import java.util.List;
 public class RecordList {
     ArrayList<UserClass>arrayList = new ArrayList<>();
 
-    /**
-     * Returns the list of health records.
-     *
-     * @return
-     *      The list of health records.
-     */
+
     public ArrayList<UserClass> getRecords() {
         ArrayList<UserClass> recordList = arrayList;
         return recordList;
