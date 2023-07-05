@@ -23,7 +23,8 @@
 
 ## ALL
 ![Register and home](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/41e782e6-8477-46ce-a809-4204aca5768a)
-![Uploading update.png…]()
+![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/35874c35-3774-440a-b1f0-e0870dfbe0f0)
+
 
 
 
