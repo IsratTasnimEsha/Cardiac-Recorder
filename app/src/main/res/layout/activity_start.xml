@@ -33,7 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:layout_marginTop="1dp"
-            android:src="@drawable/splash" />
+            android:src="@drawable/splash"
+            android:id="@+id/okay"/>
 
         <android.widget.Button
             android:id="@+id/login"
