@@ -18,7 +18,7 @@
 ![splashscreen 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0be43b1f-00d7-499d-89ea-96645940397d)
 
 ### ADD and Update
-![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/87a14b48-b9d1-43bb-bd17-4294de4a4d55)
+![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)     ![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/87a14b48-b9d1-43bb-bd17-4294de4a4d55)
 
 
 
