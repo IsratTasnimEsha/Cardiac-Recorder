@@ -8,26 +8,46 @@
     android:background="@drawable/background3"
     tools:context=".StartActivity">
 
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/logo" />
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_alignParentStart="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="145dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="260dp"
         android:orientation="vertical"
         android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/splash" />
 
         <android.widget.Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+
+            android:layout_marginTop="2dp"
+
             android:background="@drawable/button_login"
             android:onClick="loginPage"
             android:text="LOG IN"
-            android:textAllCaps="false" />
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
         <Space
             android:layout_width="0dp"
@@ -39,20 +59,21 @@
             android:layout_height="50dp"
             android:background="@drawable/button_login"
             android:onClick="registerPage"
-            android:text="Register"
-            android:textAllCaps="false" />
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/icon_image"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="110dp"
-        android:src="@drawable/logo" />
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="-2dp"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        android:src="@drawable/logo" />-->
 </RelativeLayout>

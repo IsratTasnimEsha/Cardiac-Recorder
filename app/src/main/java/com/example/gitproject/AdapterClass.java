@@ -18,16 +18,37 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.security.AccessControlContext;
 import java.util.ArrayList;
 
+/**
+ * AdapterClass is a RecyclerView adapter used to bind data to the views in a RecyclerView.
+ */
 public class AdapterClass extends RecyclerView .Adapter<AdapterClass.MyViewHolder> {
     Context context;
     ArrayList<UserClass> arrayList;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
 
+    /**
+     * Constructs an AdapterClass object.
+     *
+     * @param context
+     *      The context of the adapter.
+     * @param list
+     *      The list of UserClass objects to be displayed.
+     */
     public AdapterClass(Context context, ArrayList<UserClass> list) {
         this.context = context;
         this.arrayList = list;
     }
 
+    /**
+     * Creates a ViewHolder for the RecyclerView item views.
+     *
+     * @param parent
+     *      The parent ViewGroup.
+     * @param viewType
+     *      The type of the view.
+     * @return
+     *      A MyViewHolder object.
+     */
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -35,6 +56,14 @@ public class AdapterClass extends RecyclerView .Adapter<AdapterClass.MyViewHolde
         return new MyViewHolder(view);
     }
 
+    /**
+     * Binds data to the views in the ViewHolder.
+     *
+     * @param holder
+     *      The MyViewHolder object.
+     * @param position
+     *      The position of the item in the RecyclerView.
+     */
     @Override
     public void onBindViewHolder(@NonNull AdapterClass.MyViewHolder holder, int position) {
         UserClass userClass= arrayList.get(position);
@@ -60,11 +89,20 @@ public class AdapterClass extends RecyclerView .Adapter<AdapterClass.MyViewHolde
         });
     }
 
+    /**
+     * Returns the total number of items in the RecyclerView.
+     *
+     * @return
+     *      The item count.
+     */
     @Override
     public int getItemCount() {
         return arrayList.size();
     }
 
+    /**
+     * Represents the item views in the RecyclerView.
+     */
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView sys, dias, rate, comment, time;
         CardView card;

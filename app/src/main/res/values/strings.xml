@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">gitproject</string>
+    <string name="app_name">Cardio</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Record">History</string>
+    <string name="resend">Resend</string>
+
 </resources>

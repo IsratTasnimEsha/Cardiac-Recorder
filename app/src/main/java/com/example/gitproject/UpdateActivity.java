@@ -18,7 +18,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-
 public class UpdateActivity extends AppCompatActivity {
     EditText sys, dias, rate, comment;
     String str_phone, st_time;
@@ -43,6 +42,7 @@ public class UpdateActivity extends AppCompatActivity {
         st_time =intent.getStringExtra("Time");
 
         databaseReference.child("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(st_time)
+
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -50,7 +50,9 @@ public class UpdateActivity extends AppCompatActivity {
                         sys.setText(st_sys);
                         String st_dias= (String) snapshot.child("Diastolic").getValue();
 
+
                         dias.setText(st_dias);
+
                         String st_rate= (String) snapshot.child("Heart_Rate").getValue();
                         rate.setText(st_rate);
                         String st_comment= (String) snapshot.child("Comment").getValue();
@@ -86,6 +88,7 @@ public class UpdateActivity extends AppCompatActivity {
         delete.setOnClickListener(v -> {
             databaseReference.child("users").child(FirebaseAuth.getInstance().getUid()).child(st_time).removeValue();
             finish();
+
         });
     }
 }
