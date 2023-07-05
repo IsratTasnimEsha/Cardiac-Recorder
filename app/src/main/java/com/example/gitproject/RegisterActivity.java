@@ -60,38 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
         register = findViewById(R.id.register);
         loginUser = findViewById(R.id.login_user);
 
-<<<<<<< HEAD
-=======
-        if(st_email.isEmpty()) {
-            email.setError("Email Address Is Required.");
-            Toast.makeText(this, "Email Address Is Required.", Toast.LENGTH_SHORT).show();
-        }
-        else if(st_phone.isEmpty()) {
-            phone.setError("Name Is Required.");
-            Toast.makeText(this, "Name Is Required.", Toast.LENGTH_SHORT).show();
-        }
-        else if(st_username.isEmpty()) {
-            username.setError("Username Is Required.");
-            Toast.makeText(this, "Username Is Required.", Toast.LENGTH_SHORT).show();
-        }
-        else if(st_password.length()<6) {
-            password.setError("Password Must Be At Least 6 Characters.");
-            Toast.makeText(this, "Password Must Be At Least 6 Characters.", Toast.LENGTH_SHORT).show();
-        }
-        else {
-            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.hasChild(st_phone)) {
-                        Toast.makeText(RegisterActivity.this,
-                                "Phone Number Is Already Registered.", Toast.LENGTH_SHORT).show();
-                    }
-                    else {
-                        databaseReference.child("users").child(st_phone).child("User_Name").setValue(st_username);
-                        databaseReference.child("users").child(st_phone).child("Phone").setValue(st_phone);
-                        databaseReference.child("users").child(st_phone).child("EMail").setValue(st_email);
-                        databaseReference.child("users").child(st_phone).child("Password").setValue(st_password);
->>>>>>> 01f8f52232eeb73f8a905a1f7f8375b42087dfa8
+
 
         mRootRef = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
