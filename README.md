@@ -17,13 +17,17 @@
 ### Splash Screen
 ![splashscreen 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0be43b1f-00d7-499d-89ea-96645940397d)
 
-### ADD
-![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)
+### ADD and Update
+![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/87a14b48-b9d1-43bb-bd17-4294de4a4d55)
 
 
-## ALL
-![Register and home](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/41e782e6-8477-46ce-a809-4204aca5768a)
-![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/35874c35-3774-440a-b1f0-e0870dfbe0f0)
+
+### Login and Register 
+![loginpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/7052959f-8e10-4656-b37e-452bb7db4bb9)![registerpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/d8e6d606-4728-4a6f-9185-e8317237e239)
+
+### Update
+![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/7131974a-8c0e-454a-bf05-aa2124042f27)
+
 
 
 
