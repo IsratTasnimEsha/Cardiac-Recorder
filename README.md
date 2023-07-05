@@ -18,15 +18,18 @@
 ![splashscreen 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0be43b1f-00d7-499d-89ea-96645940397d)
 
 ### ADD and Update
-![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)                        ![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/87a14b48-b9d1-43bb-bd17-4294de4a4d55)
+![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)   
+![update](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/87a14b48-b9d1-43bb-bd17-4294de4a4d55)
 
 
 
 ### Login and Register 
-![loginpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/7052959f-8e10-4656-b37e-452bb7db4bb9)               ![registerpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/d8e6d606-4728-4a6f-9185-e8317237e239)
+![loginpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/7052959f-8e10-4656-b37e-452bb7db4bb9)              
+![registerpage 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/d8e6d606-4728-4a6f-9185-e8317237e239)
 
 ### Verify
-![verify](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/99bb8d72-248b-4121-a3cf-5a4d995eccd7)                   ![2](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/58ab096b-12e6-4435-b3a4-f101dabe2ee0)
+![verify](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/99bb8d72-248b-4121-a3cf-5a4d995eccd7)                  
+![2](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/58ab096b-12e6-4435-b3a4-f101dabe2ee0)
 
 
 
