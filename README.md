@@ -14,25 +14,17 @@
 ![video6115890995503565355_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/4e481032-5513-4234-ad3e-6966a1dda6bb)
 
 # Screenshots
-## Splash Screen 
-![splashscreen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0f6bed80-2a42-48e3-8165-a2bf471ae8ff)
+### Splash Screen
+![splashscreen 1](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0be43b1f-00d7-499d-89ea-96645940397d)
 
-## Starting Screen
-![startscreen](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/20fd20e3-5309-4f56-8d39-ef94e13efc54)
+### ADD
+![ADD](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/f05de2a5-b970-4353-8073-4ab0791475c3)
 
-## LogIN Page 
-![loginpage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/28a77e91-3c03-4706-a18f-3752c731b9ef)
 
-## Register Page 
-![registerpage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/6caca939-6e1f-41f7-a1df-be77d869a6ae)
-## Home Page
-![homepage](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/934e9610-ec0f-45ac-938d-d84379899b13)
+## ALL
+![Register and home](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/41e782e6-8477-46ce-a809-4204aca5768a)
+![Uploading update.png…]()
 
-## Add any Record 
-![addrecord](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/1ef57ae0-df73-4840-9e29-7df23f3d55b5)
-
-## Update and delete  
-![updatedelete](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/b4993346-d1d8-4fa2-b4d7-6551fdbbdcb2)
 
 
 ## Team Members
