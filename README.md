@@ -13,7 +13,8 @@
 # OverView
 
 
-https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/ac65cad1-2227-4a2f-a107-fa7d0617c8b5
+![video6138575054255950671_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/78f50f8c-23f7-4cda-8c9b-3f0053c7a8c7)
+
 
 
 
