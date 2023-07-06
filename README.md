@@ -11,7 +11,8 @@
 
 
 # OverView
-![video6115890995503565355_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/4e481032-5513-4234-ad3e-6966a1dda6bb)
+![video6138575054255950671_AdobeExpress](https://github.com/sunzidulislam/Cardiac-Recorder/assets/60359567/0d4fe42f-39e8-4e7a-a276-88d6feba202a)
+
 
 # Screenshots
 ### Splash Screen and Login and Register
